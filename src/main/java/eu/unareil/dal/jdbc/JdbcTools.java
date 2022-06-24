@@ -10,8 +10,7 @@ public class JdbcTools {
 
 	public static Connection getConnection()throws DALException{
 		StringBuilder sb = new StringBuilder();
-		sb.append("jdbc:mariadb://");
-
+		sb.append("jdbc:mysql://");
 		sb.append(":");
 		sb.append(Settings.getProperty("port"));
 		sb.append("/");
@@ -22,7 +21,6 @@ public class JdbcTools {
 		sb.append("&");
 		sb.append("password=");
 		sb.append(Settings.getProperty("mdp"));
-		sb.append(Settings.getProperty("server"));
 
 		Connection cnx;
 		try {

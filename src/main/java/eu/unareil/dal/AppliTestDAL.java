@@ -161,7 +161,7 @@ public class AppliTestDAL {
           	  afficherCatalogue(produitJDBC.selectAll());
         	  
           	  System.out.println("/*------------------------------ Modification de produit -------------------------------*/");
-          	  Produit prod95=produitJDBC.selectById(95);
+          	  Produit prod95=produitJDBC.selectById(114);
           	  prod95.setLibelle("new");
           	produitJDBC.update(prod95);
         	  System.out.println("/*------------------------------ Affichage des produits -------------------------------*/");
